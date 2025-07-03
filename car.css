@@ -1,0 +1,320 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+/* Navigation */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+}
+
+ul li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+ul li:last-child {
+  border-right: none;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+ul li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #800080; 
+}
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+header img {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+header h1 {
+  display: inline;
+  font-size: 24px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+header p {
+  margin: 0;
+  font-size: 16px;
+}
+h1 {
+  text-align: center;
+  color: white;
+  font-family:'Courier New', Courier, monospace
+}
+h2 {
+  color: black;
+}
+h3 {
+  text-align: center;
+  color: purple;
+}
+.head {
+  color: black;
+}
+div {
+  background-color: lightgrey; 
+  margin-bottom: 30px; 
+  padding: 30px; 
+  border-radius: 8px;
+  border: 1px solid purple;
+}
+
+p {
+  color: gray;
+}
+#til {
+  text-align: center;
+}
+h2.fil {
+  text-align: center; 
+  color: purple;
+}
+p.ful {
+  font-size: 24px;
+  color: black;
+}
+p.dil {
+  color: black;
+}
+p.cen {
+  text-align: center;
+}
+footer {
+  background-color: grey;  
+  text-align: center; 
+  padding: 30px; 
+  width: 96%; 
+  height: 40px; 
+  bottom: 0;
+}
+#foot {
+  background-color: grey;  
+  text-align: center; 
+  padding: 30px !important; 
+  width: 96%; 
+  height: 40px; 
+  bottom: 0;
+}
+#fre {
+  text-align:center;
+  color:purple;
+  font-weight: normal;
+  font-size: 24px;
+  text-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+  margin-bottom: 60px;
+}
+ol {
+  background-color: gray;
+  padding: 20p;
+}
+ol li {
+  background: lightgray;
+  color: darkgray;
+  padding: 5px;
+  margin-left: 15px;
+}
+input {
+  border: 1px solid black;
+  border-radius: 20px;
+  height: 40px;
+  line-height: 20px;
+  padding: 0px 30px;
+  margin-bottom: 20px;
+}
+label {
+  color: purple;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  padding-left: 10px;
+}
+
+.button {
+  background-color: purple;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 10%;
+}
+div.gallery {
+  text-align: center;
+  background-color: white;
+  margin: 35px 80px;
+  border: 1px solid gray;
+  float: left;
+  width: 180px;
+  height: 290px;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid gray;
+}
+div.gallery:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid purple;
+  background-color: lightgray;
+}
+div.browse {
+  background-color: white;
+  margin: 35px 56px;
+  border: 1px solid white;
+  float: left;
+  width: 150px;
+  height: 130px;
+}
+div.browse:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid purple;
+  background-color: white;
+}
+p.wer {
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+div.rowse {
+  background-color: white;
+  margin: 35px 90px;
+  border: 1px solid white;
+  float: left;
+  width: 80px;
+  height: 80px;
+}
+div.rowse:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid purple;
+  background-color: white;
+}
+div.bro {
+  background-color: white;
+  margin: 35px;
+  border: 1px solid white;
+  float: left;
+  width: 150px;
+  height: 130px;
+}
+.item1 { grid-area: header; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main right right right'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+div.gall {
+  text-align: center;
+  background-color: white;
+  margin: 30px 60px;
+  border: 1px solid gray;
+  float: left;
+  width: 180px;
+  height: 280px;
+}
+div.gall img {
+  width: 100%;
+  height: auto;
+}
+div.gall:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid purple;
+  background-color: lightgray;
+}
+div.gal {
+  text-align: center;
+  background-color: white;
+  margin: 30px 40px;
+  border: 1px solid gray;
+  float: left;
+  width: 180px;
+  height: 280px;
+}
+div.gal img {
+  width: 100%;
+  height: auto;
+}
+div.gal:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid purple;
+  background-color: lightgray;
+}
+div.vol {
+  border: 5px solid purple;
+  background-color: white;
+  margin: 35px 10px;
+  padding: 5px;
+}
+@media only screen and (max-width: 600px) {
+ ul {width: 100%;}
+ div.gallery {margin: 25px 57px;}
+ div.browse {margin: 30px 65px;}
+ div img {height: auto; width: 100%;}
+ h1.head { font-size: 25px;}
+ p.ful {font-size: 20px;}
+ h2.fil {font-size: 18px;}
+}
+@media only screen and(min-width: 768px) {
+ ul {width: 100%}
+ div.gallery {
+  margin: 25px 20px;
+  float: left;
+}
+}
+
+   
